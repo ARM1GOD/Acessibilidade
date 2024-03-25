@@ -1,37 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="components/loader.js"></script> 
-    <link rel="stylesheet" href="components/loader.css"> 
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Site de Acessibilidade com vLibras</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <div class="container">
-        <header class="head">
-            <img id="logo" src="../style/LOGO_ACESSIBILIDADE_-_AGOSTO_2015.jpg" alt="">
-            AcessDigital
-        </header>
-        <nav class="nave">
-            <article><a href="">Inicio</a></article>
-            <article><a href="">O que é acessibilidade</a></article>
-            <article><a href="">Sobre nós</a></article>
-        </nav>
-            <section class="conteudo">
-                <div id="cont-text">
-                    <img id="cont-img" src="../style/053-imagem-post-acessibilidade-web-responsabilidade-de-todo-time.png" alt="">
-                    <center>
-                    <div id="text">A acessibilidade é a possibilidade de uma pessoa com deficiência ou mobilidade reduzida utilizar com segurança e autonomia espaços, mobiliários, equipamentos urbanos, edificações, transportes, informação e comunicação. 
-A acessibilidade é um direito que oferece o máximo de autonomia, segurança e conforto possíveis para quem dela usufrui, com dignidade. 
-A acessibilidade é uma condição fundamental e imprescindível a todo e qualquer processo de inclusão social. Ela se apresenta em múltiplas dimensões, incluindo aquelas de natureza atitudinal, física, tecnológica, informacional, comunicacional, linguística e pedagógica, dentre outras. 
-Um plano de acessibilidade é uma ferramenta de gestão que tem como objetivo monitorar as ações de inclusão de pessoas com deficiência e mobilidade reduzida. 
-                </div>
-            </center>
+    <header>
+        <h1>Site de Acessibilidade com vLibras</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <h2>Início</h2>
+            <p>Bem-vindo ao nosso site de acessibilidade!</p>
         </section>
-            <footer class="fim"></footer>
+
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>Acessibilidade na Web: Garantir que sites, aplicativos e conteúdos online sejam projetados e desenvolvidos de forma a serem utilizáveis por pessoas com diferentes habilidades e necessidades. Isso inclui a utilização de técnicas como marcação semântica, contraste adequado entre texto e fundo, compatibilidade com leitores de tela, teclado navegável e descrições alternativas para elementos visuais.</p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Você pode entrar em contato conosco pelo email: contato@exemplo.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Site de Acessibilidade com vLibras</p>
+    </footer>
+    
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
     </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
 </body>
 </html>
